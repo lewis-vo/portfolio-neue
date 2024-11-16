@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lewis Vo</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Lewis Vo">
+  <meta property="og:title" content="Lewis Vo - Portfolio">
+  <meta property="og:description" content="Portfolio of Lewis Vo">
+  <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+  <meta property="og:image:alt" content="Lewis Vo - Portfolio">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.mywebsite.com/page">
+  <link rel="canonical" href="https://www.mywebsite.com/page">
+
+  <!-- Mobile icons -->
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/my.webmanifest">
+  <meta name="theme-color" content="#000">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="scrim"></div>
+  <nav x-data="Constants">
+    <a class="stretched hoverable slide-in-hidden" href="">
+      <h4 class="to-stretch">&#8600; Home</h4>
+    </a>
+    <a class="stretched hoverable slide-in-hidden" href="">
+      <h4 class="to-stretch">&#8600; Archive</h4>
+    </a>
+    <a class="stretched hoverable slide-in-hidden" href="">
+      <h4 class="to-stretch">&#8600; Typefaces</h4>
+    </a>
+
+    <template x-for="desc in descriptions">
+      <div class="stretched hoverable slide-in-hidden">
+        <h4 class="to-stretch" x-text="desc"></h4>
+      </div>
+    </template>
+  </nav>
+  <main>
+    <div class="top-spacer"></div>
+    <img class="hero-image" src="./assets/img/treatment.jpg">
+
+    <button class="contact-btn">
+      <img class="" src="./assets/img/contact.png">
+    </button>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
