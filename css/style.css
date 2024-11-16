@@ -146,8 +146,11 @@ main {
 }
 
 .hero-image {
-  position: relative;
+  position: absolute;
+  margin-top: 80px;
   width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   min-width: 640px;
   flex-shrink: 0;
 }
@@ -198,6 +201,9 @@ main {
   }
   .top-spacer {
     height: 150px;
+  }
+  .hero-image {
+    margin-top: 150px;
   }
 
   .contact-btn {
